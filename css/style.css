@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Open Sans' , sans-serif;
+    line-height: 1.4;
+}
+a {
+    text-decoration: none;
+}
+/* page basic style */
+/* text */
+.text-primary {
+    color: #93cb52;
+}
+
+/* navbar */
+#navbar {
+    background: #333;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+#navbar ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+#navbar ul li a {
+    color: #fff;
+    padding: 0.75rem;
+    margin: 0 0.25rem;
+}
+#navbar ul li a:hover{
+    background: #93cb52;
+    border-radius: 5px;
+}
+/* showcase */
+#showcase {
+    background: #333 url('../img/showcase\ \(1\).jpg');
+    height: 100vh;
+    color: #fff;
+}
+#showcase .showcase-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 2rem;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.heading {
+    font-size: 4rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+}
+.par {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
