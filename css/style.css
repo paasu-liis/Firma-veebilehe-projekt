@@ -17,6 +17,35 @@ a {
 .text-primary {
     color: #93cb52;
 }
+.text-center {
+    text-align: center;
+}
+/* padding */
+.py-1 {
+    padding: 1rem 0;
+}
+.p-1 {
+    padding: 1rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 5px;
+}
+.btn-primary {
+    background: #93cb52;
+    color: #fff;
+}
+.btn-primary:hover {
+    background: #7ab436;
+}
+/* background */
+.bg-light {
+    background: #f4f4f4;
+    color: #333
+}
 
 /* navbar */
 #navbar {
@@ -58,12 +87,32 @@ a {
     padding: 0 2rem;
     background-color: rgba(0, 0, 0, 0.5);
 }
-.heading {
+/* LARGE heading */
+.l-heading {
     font-size: 4rem;
     margin-bottom: 0.75rem;
+    line-height: 1.1;
+}
+/* MEDIUM heading */
+.m-heading {
+    font-size: 2rem;
+    margin-bottom: 0.75;
     line-height: 1.1;
 }
 .par {
     font-size: 1.1rem;
     margin-bottom: 2rem;
+}
+
+/* what */
+#what .items {
+    display: flex;
+}
+#what .items .item {
+    flex: 1;
+}
+#what .items .item i {
+    background: #93cb52;
+    border-radius: 50%;
+    margin-bottom: 1rem;
 }
