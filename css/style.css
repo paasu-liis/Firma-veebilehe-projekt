@@ -41,6 +41,13 @@ a {
 .btn-primary:hover {
     background: #7ab436;
 }
+.btn-dark {
+    background: #333;
+    color: #fff;
+}
+.btn-dark:hover {
+    background: #444;
+}
 /* background */
 .bg-light {
     background: #f4f4f4;
@@ -161,4 +168,18 @@ a {
 }
 #contact .contact-form .form-group {
     margin: 0.75rem;
+}
+#contact .contact-form .form-group label {
+    display: block;
+}
+#contact .contact-form .form-group input,
+#contact .contact-form .form-group textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+}
+#contact .contact-form .form-group input:focus,
+#contact .contact-form .form-group textarea:focus{
+    outline: none;
+    border: #333 solid 1px;
 }

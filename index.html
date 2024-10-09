@@ -7,6 +7,23 @@
     <script src="https://kit.fontawesome.com/1601de0f26.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
     <title>Company Web</title>
+    <script>
+        // Initialize and add the map
+        function initMap() {
+        // The location of Uluru
+        const uluru = { lat: 58.349451, lng: 26.714695 };
+        // The map, centered at Uluru
+        const map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 16,
+            center: uluru,
+        });
+        // The marker, positioned at Uluru
+        const marker = new google.maps.Marker ({
+            position: uluru,
+            map: map,
+        });
+    }
+    </script>
 </head>
 <body id="home">
     <!-- navbar -->
@@ -20,8 +37,8 @@
             <li><a href="#home">Avaleht</a></li>
             <li><a href="#what">Teenused</a></li>
             <li><a href="#who">Meeskond</a></li>
-            <li><a href="clients">Kliendid</a></li>
-            <li><a href="contat">Kontakt</a></li>
+            <li><a href="#clients">Kliendid</a></li>
+            <li><a href="#contact">Kontakt</a></li>
         </ul>
     </nav>
     <!-- header - showcase -->
@@ -122,15 +139,19 @@
                     <label for="message">Sõnum</label>
                     <textarea id="message" placeholder="Sisesta oma sõnum"></textarea>
                 </div>
-                <input type="submit" value="Saada">
+                <input type="submit" value="Saada" class="btn btn-dark">
             </form>
         </div>
         <!-- map -->
-         <div class="contact-map"></div>
+         <div id="map" class="contact-map"></div>
     </section>
 
     <!-- #footer -->
-    <footer id="footer">
+    <footer id="footer" class="bg-dark text-center py-1">
+        <p>Kõik õigused on kaitstud &copy;2024</p>
     </footer>
+
+    <!-- map script -->
+     <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhj_5QIzN5-rlQdQ4106Xqq0E9OKGM6hY&callback=initMap"></script>
 </body>
 </html>
